@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-21",
+  "ecosystem": "Pub",
+  "locked_hosted_packages_checked": 119,
+  "findings": [],
+  "scope": "Public OSV advisory query, includes dev dependencies. Not a security guarantee or complete native SDK audit."
+}

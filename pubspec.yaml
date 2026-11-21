@@ -1,0 +1,43 @@
+name: screenshot_cehennemi
+description: A local-first home for the things you want to do.
+publish_to: none
+version: 1.1.0+2
+environment:
+  sdk: ^3.13.5
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.3
+  cupertino_icons: ^1.0.8
+  drift: ^2.30.0
+  drift_flutter: ^0.2.8
+  url_launcher: ^6.3.2
+  photo_manager: ^3.12.0
+  crypto: ^3.0.7
+  path_provider: ^2.1.6
+  path: ^1.9.1
+  purchases_flutter: ^10.17.0
+  firebase_core: ^4.0.0
+  firebase_auth: ^6.0.0
+  google_sign_in: ^7.2.0
+  sign_in_with_apple: ^8.2.0
+  share_plus: ^13.3.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.30.0
+  build_runner: ^2.10.4
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/google-g.png
+  generate: true
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope.ttf

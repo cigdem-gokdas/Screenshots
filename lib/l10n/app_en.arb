@@ -1,0 +1,352 @@
+{
+  "@@locale": "en",
+  "appName": "Unuttuğum Screenshotlar",
+  "home": "Collections",
+  "library": "Library",
+  "review": "Daily review",
+  "settings": "Settings",
+  "homeEyebrow": "A LITTLE LESS FORGOTTEN",
+  "homeTitle": "Save a little.\nLive a little more.",
+  "homeSubtitle": "Good finds deserve more than a screenshot.",
+  "yourCollections": "Your collections",
+  "allEntries": "All entries",
+  "addEntry": "New entry",
+  "watchlist": "Watchlist",
+  "recipes": "Recipes",
+  "reading": "Reading list",
+  "gaming": "Gaming",
+  "places": "Places to visit",
+  "wishlist": "Wishlist",
+  "ideas": "Ideas",
+  "other": "Other",
+  "watchHint": "For your next quiet night",
+  "recipesHint": "Something worth making",
+  "readingHint": "Your next chapter",
+  "gamingHint": "A new world awaits",
+  "placesHint": "A little further afield",
+  "wishlistHint": "Thoughtful little wants",
+  "ideasHint": "Make room for a spark",
+  "otherHint": "A place for everything else",
+  "reviewTeaser": "From saved to someday soon",
+  "reviewTeaserBody": "A small look at what caught your eye.",
+  "itemCount": "{count, plural, =0{No entries yet} =1{1 entry} other{{count} entries}}",
+  "@itemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchHint": "Search your finds",
+  "allCategories": "All categories",
+  "allStatuses": "All statuses",
+  "filter": "Filter",
+  "todo": "To do",
+  "completed": "Completed",
+  "archived": "Archived",
+  "noEntries": "A little space for possibility",
+  "noEntriesBody": "Add something you want to watch, try, read or explore.",
+  "noResults": "No matching entries",
+  "noResultsBody": "Try another search or clear your filters.",
+  "clearFilters": "Clear filters",
+  "newEntry": "A good find",
+  "editEntry": "Edit entry",
+  "editorSubtitle": "Give that someday a place to start.",
+  "titleLabel": "Title",
+  "titleHint": "What caught your eye?",
+  "categoryLabel": "Collection",
+  "descriptionLabel": "Notes (optional)",
+  "descriptionHint": "A detail you want to remember…",
+  "urlLabel": "Link (optional)",
+  "urlHint": "https://…",
+  "statusLabel": "Status",
+  "save": "Save entry",
+  "cancel": "Cancel",
+  "titleError": "Enter a title between 1 and 120 characters.",
+  "descriptionError": "Keep notes under 5,000 characters.",
+  "urlError": "Enter a public https link without login details.",
+  "saveError": "Could not save. Your changes are still here. Try again.",
+  "details": "Your find",
+  "edit": "Edit",
+  "delete": "Delete entry",
+  "deleteTitle": "Let this one go?",
+  "deleteBody": "This entry will be permanently deleted from this device.",
+  "deleteConfirm": "Delete",
+  "actionError": "That didn’t work. Please try again.",
+  "openLink": "Open link",
+  "linkError": "This link could not be opened.",
+  "savedOn": "Saved {date}",
+  "@savedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedOn": "Updated {date}",
+  "@updatedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notes": "A note to remember",
+  "entryGone": "This entry is no longer available.",
+  "reviewEyebrow": "A MOMENT TO RECONNECT",
+  "reviewTitle": "Make room\nfor a little doing.",
+  "reviewSubtitle": "Your collections, with a little perspective.",
+  "savedToday": "Saved today",
+  "uncompleted": "Still to do",
+  "completedItems": "Completed entries",
+  "distribution": "Where curiosity takes you",
+  "revisit": "Worth another look",
+  "revisitHint": "Unfinished finds untouched for at least 7 days.",
+  "noRevisit": "You’re all caught up for now.",
+  "suggestionLabel": "ONE SMALL SUGGESTION",
+  "suggestion": "Start with “{title}” in {category}. One good find is enough for today.",
+  "@suggestion": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "emptySuggestion": "Your next good find starts here. Save something you’re curious about.",
+  "doneSuggestion": "You’ve completed {count} entries. Make a little room for your next discovery.",
+  "@doneSuggestion": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "archivedSuggestion": "Your finds are in the archive. Reopen an entry whenever you feel curious.",
+  "viewEntry": "Take a look",
+  "reviewEmpty": "Your story starts with a find",
+  "reviewEmptyBody": "Your real activity will appear here as you add entries.",
+  "language": "Language",
+  "languageSubtitle": "Choose what feels like home.",
+  "systemLanguage": "Device language",
+  "turkish": "Türkçe",
+  "english": "English",
+  "privacyTitle": "Just you and your finds",
+  "privacyBody": "Screenshot analysis uses Apple Vision and local rules on this device. Images and OCR text are not sent to a server. Optional account sign-in shares identity information with Firebase and your chosen provider; Pro billing shares purchase information with RevenueCat and the store.",
+  "storageTitle": "On this device",
+  "storageBody": "Uninstalling or clearing app storage can remove entries. On iOS, the app requests backup exclusion for its local database and imported copies. Backups made earlier are not changed.",
+  "loadError": "Your collection couldn’t be loaded.",
+  "retry": "Try again",
+  "close": "Close",
+  "discardTitle": "Discard your changes?",
+  "discardBody": "Your unsaved changes will be lost.",
+  "discard": "Discard",
+  "keepEditing": "Keep editing",
+  "autoSync": "Automatic Screenshot Sync",
+  "syncIntroTitle": "Your screenshots.\nA little more organized.",
+  "syncIntroBody": "Enable automatic sync once. New screenshots become entries without selecting, confirming or categorizing them. You can still edit anything later.",
+  "syncAccessTitle": "You choose photo access",
+  "syncAccessBody": "iOS may grant access to your full photo library, or only selected photos. Access is not scoped to Screenshots by the operating system. This app checks screenshot types and processes screenshots only. Limited access can miss screenshots. You can change or revoke access later in iOS Settings.",
+  "syncLocalTitle": "Organized on this device",
+  "syncLocalBody": "Screenshots and recognized text stay in app-local storage. Likely passwords, banking details and recovery codes are skipped after a minimal local check. Detection and categorization can make mistakes. Text recognition uses Apple Vision and local classification rules, not cloud AI.",
+  "syncForegroundTitle": "Catches up when you return",
+  "syncForegroundBody": "Sync runs while the app is active and catches up when you open it again. iOS can suspend or terminate the app; continuous background monitoring is not available. iCloud-only screenshots wait until available on this device.",
+  "syncEnable": "Enable automatic sync",
+  "notNow": "Not now",
+  "newOnly": "Your archive first, then new screenshots",
+  "newOnlyBody": "Available screenshots are discovered after you grant access. New screenshots are then added while the app is active. Duplicate content is not saved again.",
+  "importExisting": "Import Existing Screenshots",
+  "importExistingTitle": "Include older screenshots?",
+  "importExistingBody": "Automatically organize accessible screenshots captured before sync was enabled. Sensitive screenshots are still skipped. Your original Photos library will not be changed.",
+  "syncStatus": "Sync Status",
+  "lastSync": "Last Successful Sync",
+  "neverSynced": "Not yet",
+  "photoPermission": "Photo access",
+  "accessNotDetermined": "Not requested",
+  "accessAuthorized": "Full Access",
+  "accessLimited": "Limited Access",
+  "accessDenied": "Not Allowed",
+  "accessRestricted": "Access restricted by device controls",
+  "syncOff": "Automatic sync is off",
+  "syncChecking": "Checking photo access…",
+  "syncScanning": "Finding screenshots…",
+  "syncProcessing": "Organizing on this device…",
+  "syncIdle": "Up to date",
+  "syncWaiting": "Some screenshots are waiting — cloud assets retry when locally available",
+  "syncPaused": "Paused while the app is inactive",
+  "syncError": "Sync could not finish. Your entries are still here.",
+  "syncIOSOnly": "Automatic library sync is available on iOS. Use selected imports and manual organization on Android.",
+  "openPhotoSettings": "Open iOS Settings",
+  "deleteImported": "Delete Imported Screenshot Data",
+  "deleteImportedTitle": "Delete imported data from this app?",
+  "deleteImportedBody": "Turns sync off and deletes imported entries, local image copies, extracted text and import history. Manual entries and original screenshots in Photos stay unchanged. Re-enabling starts with new screenshots only.",
+  "screenshotFallback": "Screenshot · {date}",
+  "@screenshotFallback": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "importedScreenshot": "Imported screenshot",
+  "capturedOn": "Captured {date}",
+  "@capturedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "imageUnavailable": "The local screenshot copy is unavailable.",
+  "syncHistoryPending": "Existing screenshots will be included when access is available.",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfUse": "Terms of Use",
+  "readPublishedPolicy": "Read the published document",
+  "legalDraftNotice": "This summary is a draft. The developer must publish and approve the complete legal documents before subscriptions are available.",
+  "privacyPolicyBody": "Your selected screenshots, extracted text and collections are processed on this device and stored in app-private storage. No screenshot or OCR content is sent to a backend or AI provider. Automatic sync is optional and requires separate Photos access; you can change access in device Settings.\n\nOptional Pro subscriptions use Apple/Google and RevenueCat. After you choose to connect, a purchase identifier and purchase history are shared to validate subscriptions. SDK diagnostics and automatic attribution-identifier collection are disabled. RevenueCat provides purchase reporting for the developer. We add no advertising, tracking or app analytics SDK.\n\nDelete individual entries or use Delete Imported Screenshot Data in Settings to remove imported entries, copies and import history. Manual entries remain until you delete them. Original Photos are never deleted. Temporary processing copies are removed after each attempt or swept on the next launch after interruption. Purchase records are retained separately by the store and RevenueCat; deleting local screenshots does not cancel a subscription or erase records they must retain.\n\nUninstalling can remove local data. The app requests iOS file protection and backup exclusion for its database and imported copies; previous backups and filesystem snapshots may retain data. Sensitive-screen checks can miss content and deletion is not certified secure erasure. External saved links open only when you choose. No user account is required. If you choose Google or Apple sign-in, Firebase Authentication and the selected provider process your sign-in identity (UID, optional name/email or Apple relay email, credentials and connection metadata). We do not send screenshots or OCR text to them. SDKs manage session credentials; they are not saved in the app database. Firebase UID is used for RevenueCat identity after billing consent. Delete Account requires reauthentication, deletes the Firebase account and clears this device’s session while keeping its local collections. Store and RevenueCat purchase records are separate; subscriptions are not cancelled by account deletion. No screenshot cloud backup or cross-device collection sync exists.\n\nGoogle Sign-In and Firebase Auth may process diagnostics, device/user identifiers and usage information for their services. Their SDK privacy declarations include broader categories as well. The app does not request a phone-number or location permission; provider metadata is separate from screenshot content. No separate advertising or app-analytics service was added; we do not claim all provider operational measurements are disabled.",
+  "termsBody": "Free features include selected imports, local organization, viewing, editing and deletion. On iOS, Apple Vision and local rules analyze screenshots without paid cloud AI. Android selected imports keep the image for manual organization; text recognition is currently iOS-only.\n\nAutomatic screenshot discovery is free on iOS while the app is active. Pro increases manual selection batches from 10 to 50 photos on iOS. It does not provide continuous background monitoring or unlimited cloud AI. Monthly and yearly subscriptions renew automatically unless cancelled through the store at least 24 hours before renewal. The store displays the exact local price and confirms each purchase. Payment is handled by the store. Manage or cancel in your store subscription settings; deleting this app or its content does not cancel billing.\n\nExisting saved data remains accessible if Pro expires or verification is temporarily unavailable. Recently verified subscription access may continue offline for up to 72 hours, never beyond its known expiry. A refund, revocation or expiry removes the larger Pro batch allowance after verification.\n\nClassification and sensitive-content checks may be wrong. Review and edit results when needed. This draft requires developer legal approval and complete publisher/contact details before release.",
+  "proTitle": "Unuttuğum Screenshotlar Pro",
+  "proBadge": "Pro",
+  "proHeadline": "Organize a bigger pile.",
+  "proBenefits": "Import up to 50 photos in one selection. Analysis happens on your device. Automatic screenshot discovery and basic features are available to everyone.",
+  "freeAlways": "Selected imports (10 photos), automatic discovery, viewing, editing, deleting, search and Daily Review remain free.",
+  "proActive": "Pro is active",
+  "freePlan": "Free plan",
+  "upgradePro": "Explore Pro",
+  "billingDisclosure": "To view plans or restore, connect to RevenueCat and your store. Purchase identifiers (linked to your Firebase UID if you sign in) and purchase history are used to verify subscriptions. Your screenshots and recognized text are not shared. No account is needed.",
+  "viewPlans": "Connect and view plans",
+  "monthlyPrice": "{price} / month",
+  "yearlyPrice": "{price} / year",
+  "subscriptionTerms": "Auto-renewing subscription. The store confirms price and payment. Cancel in store subscription settings at least 24 hours before renewal. Your saved data remains accessible after cancellation.",
+  "restorePurchases": "Restore purchases",
+  "manageSubscription": "Manage subscription",
+  "purchaseSuccess": "Pro is ready. Enjoy a little less organizing.",
+  "restoreSuccess": "Your Pro subscription has been restored.",
+  "restoreEmpty": "No active Pro subscription was found for this store account.",
+  "purchaseCancelled": "Purchase cancelled. You can continue using the free features.",
+  "purchasePending": "Waiting for store approval. Please do not purchase again; access updates after confirmation.",
+  "purchaseFailed": "The purchase could not be completed. Check your connection and store account, then try again.",
+  "billingUnavailable": "Subscription options are unavailable right now. Your saved data and free features are still available.",
+  "autoSyncPro": "Automatic library organization is a Pro feature. Existing entries stay available on every plan.",
+  "importScreenshots": "Import screenshots",
+  "pickerHeadline": "Choose a few\ngood finds.",
+  "pickerExplanation": "Select screenshots or photos with the system picker. The app receives only what you choose; full photo-library access is not required. On iOS, text is recognized and categorized on this device. Nothing is uploaded to an AI service. You can edit or delete every result.",
+  "pickerLimits": "Up to 10 photos per selection, or 50 with Pro. Images are resized on your device and original location metadata is discarded.",
+  "chooseScreenshots": "Choose images",
+  "importWorking": "Organizing on this device… You can cancel safely.",
+  "importSummary": "{imported} saved · {duplicates} already saved · {skipped} skipped for privacy · {failed} could not be processed.",
+  "@monthlyPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@yearlyPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@importSummary": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "duplicates": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "photoAccessSection": "Photo Access",
+  "photoPromptTitle": "Find your screenshots?",
+  "photoPromptBody": "With full access we find and sort your screenshots automatically, or you can add only the ones you pick.",
+  "localAnalysis": "Analysis happens on your device.",
+  "findScreenshots": "Find My Screenshots",
+  "pickMyself": "I’ll Choose",
+  "selectPhotos": "Select Photos",
+  "manageAccess": "Manage Access",
+  "openSettings": "Open Settings",
+  "allowInSettings": "Allow in Settings",
+  "photoLimitedBody": "We can only see the photos you selected.",
+  "photoDeniedBody": "Photo access is off. You can still choose screenshots yourself.",
+  "photoRestrictedBody": "Photo access is restricted on this device and cannot be changed from the app. You can still try selecting photos.",
+  "photoFullBody": "Screenshots are discovered while the app is active. Other photos are not analyzed.",
+  "onboardingSaved": "You saved it.",
+  "onboardingLost": "Then it disappeared.",
+  "onboardingRecognition": "Your screenshots are really a to-do list.",
+  "onboardingResolution": "Saving isn’t enough.\nYou need to find it again.",
+  "onboardingNext": "Continue",
+  "organizeHell": "Organize the Chaos",
+  "onboardingGuest": "Start without an account.",
+  "semanticWatch": "Watch",
+  "semanticRead": "Read",
+  "semanticGo": "Go",
+  "semanticEat": "Eat",
+  "semanticDo": "Do",
+  "accountTitle": "Account",
+  "guestMode": "Yours, on this device.",
+  "accountConnected": "Account connected",
+  "accountExplanation": "Signing in is optional. It keeps your subscription identity; screenshots are never uploaded.",
+  "continueLabel": "Continue",
+  "continueGoogle": "Continue with Google",
+  "continueApple": "Continue with Apple",
+  "linkGoogle": "Link Google account",
+  "linkApple": "Link Apple account",
+  "linkAccountExplanation": "Linking another provider first verifies your current account. Matching email addresses never merge accounts automatically.",
+  "signOut": "Sign Out",
+  "deleteAccount": "Delete Account",
+  "deleteAccountBody": "Your account and this device’s sign-in credentials will be deleted. Local screenshots and collections will remain. Your subscription will not automatically cancel; manage it in Apple subscription settings. You will be asked to verify your account again.",
+  "authDisabled": "Account sign-in is off in this version. Everything works without an account.",
+  "authUnavailable": "Account sign-in is not configured yet. You can use all basic features without an account.",
+  "authCancelled": "Sign-in cancelled. Your collections are still here.",
+  "authFailed": "Could not finish signing in. Please try again later.",
+  "authNetwork": "Your account cannot be reached right now. Check your connection; your local collections remain available.",
+  "authConflict": "This sign-in belongs to another account. Sign in using your original method, then link the other provider here. Accounts were not automatically merged.",
+  "authRevoked": "Your account access ended. You can keep using your collections and sign in again whenever you choose.",
+  "authDeleted": "Account deleted. This device’s collections are preserved.",
+  "authSignedOut": "Signed out. Your collections remain on this device.",
+  "authBillingSync": "You are signed in, but subscription status is unavailable. We will check again when connected.",
+  "photoAccessUnavailable": "Photo access status is unavailable right now. You can select photos or try again.",
+  "sortLabel": "Sort",
+  "sortNewest": "Newest first",
+  "sortOldest": "Oldest first",
+  "sortTitle": "A to Z",
+  "starterImport": "Import screenshots",
+  "addManually": "Add manually",
+  "undo": "Undo",
+  "entryDeleted": "Entry deleted",
+  "markDone": "Done",
+  "markTodo": "Reopen",
+  "share": "Share",
+  "linkConfirmTitle": "Open this link?",
+  "linkConfirmBody": "This link was read from a screenshot. Check the address before you open it.",
+  "open": "Open",
+  "bestValue": "Best value",
+  "privacyNote": "Your data isn't included in device backups, so entries don't move to a new device.",
+  "onboardingProgress": "{current} / {total}",
+  "@onboardingProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "versionLabel": "Version {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "moreActions": "More actions"
+}

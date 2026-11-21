@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-21",
+  "scope": "Dedicated verification simulator only",
+  "apple_private_selected_only_banner_observed": true,
+  "broad_photo_permission_rows_before": [],
+  "broad_photo_permission_rows_after": [],
+  "no_broad_authorization_granted": true,
+  "native_picker_selection_completed": false,
+  "automation_blocker": "Native picker item coordinate clicks returned noWindowsAvailable; manual real-device end-to-end selection remains required."
+}

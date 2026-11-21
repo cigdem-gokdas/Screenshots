@@ -1,0 +1,1 @@
+Google G logo: official sign-in branding asset, downloaded from https://developers.google.com/static/identity/images/g-logo.png on 21 October 2026. Google trademark belongs to Google. Use only for the Google authentication button under https://developers.google.com/identity/branding-guidelines; do not recolor/distort or imply endorsement.

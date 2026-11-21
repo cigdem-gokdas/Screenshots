@@ -1,0 +1,11 @@
+{
+  "original_simulator": "<SIMULATOR_ID>",
+  "original_app_file_count": 12,
+  "original_all_file_hashes_unchanged": true,
+  "original_not_launched_uninstalled_or_erased": true,
+  "verification_simulator": "<SIMULATOR_ID>",
+  "verification_saved_entries": 7,
+  "verification_entry_rows_match_private_backup": true,
+  "older_verification_simulator_backed_up_then_shutdown": true,
+  "simulators_deleted": false
+}

@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Blocks commits containing secrets. Install with tool/install_hooks.sh.
+set -u
+root=$(git rev-parse --show-toplevel) || exit 1
+cd "$root" || exit 1
+fail=0
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+[ -z "$staged" ] && exit 0
+
+# 1. Forbidden file names.
+while IFS= read -r f; do
+  b=$(basename "$f")
+  case "$b" in
+    .env.example) ;;
+    .env|.env.*|*.p8|*.p12|*.jks|*.keystore|GoogleService-Info.plist|google-services.json)
+      echo "BLOCKED: forbidden file staged: $f"; fail=1 ;;
+  esac
+  [ "$f" = "config/release.public.json" ] && { echo "BLOCKED: forbidden file staged: $f"; fail=1; }
+done <<< "$staged"
+
+# 2. Content scan: gitleaks if available, else regex fallback.
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --no-banner --redact >/dev/null 2>&1 \
+    || { echo "BLOCKED: gitleaks found possible secrets (run: gitleaks protect --staged --redact -v)"; fail=1; }
+else
+  pat='AIza[0-9A-Za-z_-]{35}|appl_[A-Za-z0-9]{20,}|goog_[A-Za-z0-9]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----|sk_(live|test)_|"private_key"'
+  while IFS= read -r f; do
+    case "$f" in tool/pre-commit|tool/scan_secrets.py|.gitleaks.toml) continue ;; esac
+    if git show ":$f" 2>/dev/null | grep -aEq -e "$pat"; then
+      echo "BLOCKED: possible secret pattern in $f"; fail=1
+    fi
+  done <<< "$staged"
+fi
+[ "$fail" -ne 0 ] && echo "Commit blocked. Remove the secret or unstage the file."
+exit "$fail"

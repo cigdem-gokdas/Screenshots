@@ -1,0 +1,3 @@
+// Public callback configuration only. The disabled scheme is intentional.
+GOOGLE_REVERSED_CLIENT_ID = screenshot-cehennemi-auth-disabled
+#include? "Auth.generated.xcconfig"

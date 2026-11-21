@@ -1,0 +1,108 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/
+
+# Local development/distribution credentials must never enter source control.
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+*.keystore
+*.jks
+**/key.properties
+**/signing.properties
+
+# Owner-filled public release settings; never add private API keys here.
+config/release.public.json
+
+# Owner-generated public OAuth callback configuration.
+ios/Flutter/Auth.generated.xcconfig
+# Service-account and OAuth server credentials must stay outside this repo.
+**/service-account*.json
+**/client_secret*.json
+
+# Preserved generated metadata from the iCloud build workaround.
+/ios/Flutter/.ephemeral-preserved-*
+/macos/Flutter/.ephemeral-preserved-*
+
+# Hygiene additions (no trailing slash so symlinks match too).
+/build
+/ios/Flutter/ephemeral
+/macos/Flutter/ephemeral
+**/.symlinks/
+**/flutter/ephemeral/
+.ephemeral-preserved-*
+flutter_*.log
+*.log
+GoogleService-Info.plist
+google-services.json
+.env
+.env.*
+!.env.example
+
+# Additional secret/generated-file protection.
+**/GoogleService-Info.plist
+**/google-services.json
+*.pem
+*.key
+.claude/settings.local.json
+windows/flutter/ephemeral
+linux/flutter/ephemeral
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+**/Pods/
+.flutter-plugins
+android/local.properties
+android/key.properties
+google-services.json
+
+# Local Claude Code state
+/.claude/

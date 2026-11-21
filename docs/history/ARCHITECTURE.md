@@ -1,0 +1,63 @@
+# Unuttuğum Screenshotlar — architecture (schema v2 / app 1.1)
+
+## Existing boundaries retained
+`lib/domain` contains immutable entries, validation/search and deterministic review calculations. `LocalEntryRepository` owns manual CRUD and exposes Drift watch streams. `AppController` retains entry/loading/language state and forwards sync changes. The Flutter UI and generated gen-l10n resources remain separate. Native app identity and database name are unchanged.
+
+## Automatic synchronization
+- `lib/sync/sync_models.dart`: permission/activity/config types, cancellation token, screenshot library, OCR and classifier interfaces.
+- `lib/sync/screenshot_sync.dart`: foreground-only coordinator; consent enable/disable, lifecycle reconciliation, observation debounce, persistent discovery, bounded worker, permission rechecks, cancellation, retries, cleanup and import-data wipe.
+- `lib/sync/classifier.dart`: modular bilingual rule lists, conservative title extraction, validated observed URLs and sensitive-screen detection. Ambiguity is not resolved by fabricated metadata.
+- `lib/data/sync/photo_manager_library.dart`: photo_manager 3.12.0. Full authorization queries `PMDarwinAssetCollectionSubtype.smartAlbumScreenshots`; limited authorization globally pages only OS-permitted image metadata because smart albums are unreliable under limited grants. Both paths enforce `PHAssetMediaSubtype.photoScreenshot` before loading bytes. No localized-name matching or Photos editor/write API is used.
+- `lib/data/sync/vision_recognizer.dart` and `ios/Runner/AppDelegate.swift`: Apple's Vision OCR via a sandbox-file-only method channel, performed off the main thread. Supported Turkish/English language hints are selected from Vision's supported languages. Language correction is disabled to reduce invented corrections. No ML Kit or telemetry transport remains after the user's explicit no-telemetry choice.
+- `lib/data/sync/import_media_store.dart`: app-owned normalized JPEG copies, temporary staging, safe relative names, orphan sweep and deletion. Paths are relative in SQLite so reinstall/restore sandbox path changes do not break records.
+- `lib/data/sync/private_storage.dart`: requests iOS backup exclusion and complete file protection before automatic writes. Documents is excluded because Drift's database holds OCR notes; imported image/staging directories are also configured. If this preparation fails, automatic processing does not start and an error/retry state is shown.
+- `lib/ui/screens/sync_onboarding_screen.dart` and `sync_settings_section.dart`: consent explanation, one-time enable action, OS permission states, new-only default, explicit historic import, status, last success, retry, off and destructive local-data wipe.
+
+## Schema migration
+Schema 1 → 2 adds nullable source digest, relative image path and capture date columns to existing entries; it preserves every existing entry, status, creation/update time and language preference. New manual entries leave import columns null. New `screenshot_jobs` has a digest primary key, transient pending raw ID/date, processing state, attempt/retry fields, optional normalized-content hash and entry foreign key with ON DELETE SET NULL. A hash index supports duplicate lookup. Sync configuration is one JSON value in the existing preferences table.
+
+Migration tests construct an actual v1 SQLite schema and verify entry IDs/content/dates/language survive. Generated Drift sources are checked in.
+
+## Durable work and atomicity
+Pages of 50 metadata rows enqueue with insert-or-ignore. Twelve queued/due rows are fetched at a time; exactly one image is loaded and recognized at a time. Reconciliation requests while running coalesce into a drain loop whose returned future includes the follow-up scan. Photo notifications are hints, not the source of truth. Every full reconciliation scans the persisted date boundary again, which covers missed notifications and permission changes without an in-memory ID set.
+
+`queued/retry → processing → done | duplicate | excluded | retry | failed`. Startup resets interrupted processing rows to queued without consuming the retry budget. Cloud deferrals wait 15 minutes without incrementing attempts; ordinary failures have at most three attempts with backoff. Explicit Retry, permission expansion and re-enabling reset exhausted jobs; a fresh enabled startup also rechecks accessible failed work. No error detail/string from a native plugin is stored or logged, only allowlisted failure codes.
+
+After OCR, cancellation/permission are checked before any retained content is written. Sensitive results immediately become minimal tombstones; raw ID/date are cleared. For accepted work, a copy is written before a Drift transaction commits the entry and completion marker together. A token invalidated during that transaction throws and rolls it back. If the process dies between copy and commit, startup sweeps the orphan. Stable IDs and hash lookup prevent duplicates on resume and after individual entry deletion.
+
+## Lifecycle and cancellation
+`AppShell` forwards all non-resumed lifecycle states as pauses. Pause/off invalidate the token, cancel timers and native loads and stop photo_manager observation. Native Vision is serial and not forcibly interruptible; the coordinator drains it and discards the cancelled result. No next job begins after cancellation. Foreground return waits for the old operation to drain, rechecks authorization and reconciles. No BGTaskScheduler, background service, fake audio/location mode or terminated-app execution is used.
+
+Disabling waits for current work to settle before returning. Deleting imported data first disables/drains, atomically deletes only entries carrying source digests plus their ledger, resets sync config, then removes owned files. Interrupted file deletion is recovered by startup sweep. The Photos library is outside every deletion path.
+
+## Memory, privacy and persistence
+Only a 50-item metadata page, a 12-job metadata batch and one fitted 1600×2400 image (JPEG capped at 8 MiB) are in the import pipeline at once. No original-image byte array or full-gallery asset list is retained. OCR strings over 32,000 characters are conservatively excluded; accepted notes are capped at 5,000. Existing entry/search streams load saved text models, never gallery image bytes; very large saved collections should receive SQL paging/aggregate views in a later scaling pass.
+
+Staging is temporary/app-private, deleted after each attempt and swept at startup. Excluded jobs retain only a one-way platform-ID digest. Non-sensitive tombstones retain a normalized-content hash so deleting an entry does not cause reimport. Full import-data wipe removes those tombstones too. No content logging, network OCR or analytics is wired in.
+
+## Android boundary
+The native library adapter is supported only on iOS. Android retains manual features and displays an explanation. Explicit manifest merger removals block plugin-contributed storage/photo permissions until policy eligibility and a scoped Android design are validated. Apple Vision is never invoked on Android.
+
+## Tests
+Domain, repository, migration, queue, channel-adapter and widget tests cover classification, sensitivity, smart album/subtype identity, limited access, permissions, opt-in UI, duplicate suppression, restart recovery, retries, cancellation, preserved manual data, locale and existing CRUD/review flows. Native simulator integration uses real Vision OCR, real SQLite reopen and isolated synthetic fixtures without modifying Photos originals. Physical-device notification, iCloud, revocation and process-kill behavior remain release QA.
+
+## Branding and installation compatibility
+The official display name is **Unuttuğum Screenshotlar** in both Turkish and English. Flutter reads it from `appName` in gen-l10n resources; iOS and Android also supply native localized display names. Native permission explanations use the same brand. No layout, typography, category styling or application behavior changed for this rebrand.
+
+The Dart package/project directory remain `screenshot_cehennemi`. iOS/macOS bundle ID `com.example.screenshotCehennemi`, Android application ID/namespace `com.example.screenshot_cehennemi`, native targets/products, executable names and desktop application IDs remain unchanged to preserve installation identity and build dependencies. The Drift database stays `screenshot_cehennemi.sqlite`, schema 2; `language` and `screenshot_sync.v1` preference keys, media paths, queue/history and `screenshot_cehennemi/local_vision` channel remain unchanged. A display-name change requires no database migration or preference reset. Never uninstall or clear app data to apply it.
+
+Desktop artifact filenames and the temporary build-workaround prefix intentionally retain the internal project name. Generated SDK/IDE configuration may contain the existing absolute workspace path. These are not product branding. See RELEASE_CHECKLIST.md for distribution preparation.
+
+## Hardening additions — 21 October 2026
+`lib/billing` separates RevenueCat transport from entitlement models/controller and billing-consent storage. Only provider-verified, active, unexpired `pro` grants access, with a bounded 72-hour offline window. No entitlement boolean is persisted in application preferences. The SDK starts after billing consent/configuration, customer updates/foreground refresh propagate revocation/expiry to the coordinator, and free data access is independent of billing failures. `ReleaseConfig` centralizes public keys, IDs, legal URLs and policy bounds.
+
+`lib/importing/selected_import.dart` coalesces explicit picker requests, normalizes one image at a time, runs optional local recognition, rejects likely sensitive content, deduplicates and commits selected entries/ledger atomically through the existing schema. iOS PHPicker/Android system picker adapters return private cache copies without broad access. Image byte/MIME/dimension limits precede full iOS decoding; selected originals/staging are cleaned after attempts or startup recovery. JPEG legacy paths remain valid and Android normalized PNG names are additionally supported. SQLite schema/file identity remains unchanged; `secure_delete` is enabled without claiming forensic erasure.
+
+The SDK/backend is RevenueCat for purchases only, not screenshot processing. AI server authentication, quota/budget enforcement and cloud-content deletion are inapplicable because no such backend exists. See current release/privacy documents for the explicit boundaries. CI is read-only with pinned actions and unsigned iOS compilation; native tests always create a separate simulator.
+
+## Product/auth update — authoritative current behavior
+`lib/auth` isolates Firebase/provider transport, account models and AuthController. Main constructs the gateway without contacting Firebase for a fresh guest; SDK setup is user-choice/configuration dependent. Tokens remain SDK-managed and are not copied into Drift. AuthController forwards only verified provider UID/null to SubscriptionController. Billing identity mutation serializes SDK logIn/logOut with store operations; revision checks prevent an older customer refresh from replacing a new account’s access. No identity column/row/file migration is performed.
+
+`lib/onboarding` persists only completion through `ProductPreferences`; `editorial_onboarding.dart` draws/animates local tactile fragments with reduced-motion support. `photo_access_section.dart` is the shared pre-prompt/status/manage surface. ScreenshotSync reads status without requesting, requests only on explicit undetermined-state action, refreshes on foreground and filters screenshots by existing adapter metadata. Basic automation is now free; verified Pro changes only iOS picker batch size (10 → 50). Initial discovery includes existing history; full-access incremental scans use last-success overlap; limited selection changes reconcile older exposed metadata. Photos IDs supplied by PHPicker are hashed into the existing import ledger to prevent duplicates across picker/automatic paths. Conditional atomic queue claims prevent stale automatic work from overwriting a picker commit.
+
+`FloatingDock` preserves the four IndexedStack tabs and scroll state, participates in Scaffold layout so content is not covered, respects safe areas/keyboard and exposes selected semantic buttons. No new app analytics, remote OCR, cloud screenshot database, messaging or forced account was introduced. Auth introduces off-device identity processing and linked purchase disclosures; the current privacy matrix supersedes earlier anonymous-only descriptions.

@@ -1,0 +1,337 @@
+{
+  "scope": "Source/documentation changes relative to private pre-pass backup; generated build metadata omitted.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "status": "modified"
+    },
+    {
+      "path": "docs/history/ARCHITECTURE.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/history/PRODUCT_SPEC.md",
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/history/RELEASE_CHECKLIST.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/history/SECURITY_CHECKLIST.md",
+      "status": "modified"
+    },
+    {
+      "path": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "status": "modified"
+    },
+    {
+      "path": "assets/branding/README.md",
+      "status": "added"
+    },
+    {
+      "path": "assets/branding/google-g.png",
+      "status": "added"
+    },
+    {
+      "path": "config/release.public.example.json",
+      "status": "modified"
+    },
+    {
+      "path": "docs/AI_COST_AND_PRIVACY.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/APP_STORE_PRIVACY_MATRIX.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/AUTH_AUDIT.md",
+      "status": "added"
+    },
+    {
+      "path": "docs/AUTH_NATIVE_PRIVACY_DECLARATIONS.json",
+      "status": "added"
+    },
+    {
+      "path": "docs/FINAL_CONSOLE_SUMMARY.txt",
+      "status": "modified"
+    },
+    {
+      "path": "docs/FINAL_RELEASE_AUDIT.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/MANUAL_AUTH_AND_SERVICE_SETUP.md",
+      "status": "added"
+    },
+    {
+      "path": "docs/MANUAL_RELEASE_TASKS.md",
+      "status": "modified"
+    },
+    {
+      "path": "docs/PHYSICAL_IPHONE_RUN.md",
+      "status": "added"
+    },
+    {
+      "path": "docs/PRODUCT_AUTH_DATA_PRESERVATION.json",
+      "status": "added"
+    },
+    {
+      "path": "docs/PRODUCT_AUTH_DEPENDENCY_AUDIT.json",
+      "status": "added"
+    },
+    {
+      "path": "docs/PRODUCT_AUTH_SOURCE_SCAN.json",
+      "status": "added"
+    },
+    {
+      "path": "docs/PRODUCT_AUTH_VERIFICATION.md",
+      "status": "added"
+    },
+    {
+      "path": "docs/RELEASE_VERIFICATION.md",
+      "status": "modified"
+    },
+    {
+      "path": "integration_test/sync_test.dart",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Flutter/Auth.xcconfig",
+      "status": "added"
+    },
+    {
+      "path": "ios/Flutter/Debug.xcconfig",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Flutter/Release.xcconfig",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.pbxproj",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/swiftpm/Package.resolved",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner/AppDelegate.swift",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner/GeneratedPluginRegistrant.m",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner/Info.plist",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner/PrivacyInfo.xcprivacy",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner/Runner.entitlements",
+      "status": "added"
+    },
+    {
+      "path": "ios/Runner/en.lproj/InfoPlist.strings",
+      "status": "modified"
+    },
+    {
+      "path": "ios/Runner/tr.lproj/InfoPlist.strings",
+      "status": "modified"
+    },
+    {
+      "path": "lib/application/app_controller.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/auth/auth_config.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/auth/auth_controller.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/auth/auth_models.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/auth/firebase_auth_gateway.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/billing/revenuecat_gateway.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/billing/subscription_controller.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/billing/subscription_models.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/config/release_config.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/data/product_preferences.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/data/sync/photo_manager_library.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/data/sync/sync_repository.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/importing/selected_import.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/l10n/app_en.arb",
+      "status": "modified"
+    },
+    {
+      "path": "lib/l10n/app_localizations.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/l10n/app_localizations_en.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/l10n/app_localizations_tr.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/l10n/app_tr.arb",
+      "status": "modified"
+    },
+    {
+      "path": "lib/main.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/onboarding/onboarding_controller.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/sync/screenshot_sync.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/ui/app.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/ui/floating_dock.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/ui/screens/account_section.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/ui/screens/editorial_onboarding.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/ui/screens/import_screen.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/ui/screens/photo_access_section.dart",
+      "status": "added"
+    },
+    {
+      "path": "lib/ui/screens/settings_screen.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/ui/screens/sync_settings_section.dart",
+      "status": "modified"
+    },
+    {
+      "path": "lib/ui/sync_presentation.dart",
+      "status": "modified"
+    },
+    {
+      "path": "macos/Flutter/GeneratedPluginRegistrant.swift",
+      "status": "modified"
+    },
+    {
+      "path": "pubspec.lock",
+      "status": "modified"
+    },
+    {
+      "path": "pubspec.yaml",
+      "status": "modified"
+    },
+    {
+      "path": "test/auth_test.dart",
+      "status": "added"
+    },
+    {
+      "path": "test/importing/selected_import_test.dart",
+      "status": "modified"
+    },
+    {
+      "path": "test/product_flow_test.dart",
+      "status": "added"
+    },
+    {
+      "path": "test/sync/fakes.dart",
+      "status": "modified"
+    },
+    {
+      "path": "test/sync/sync_test.dart",
+      "status": "modified"
+    },
+    {
+      "path": "test/sync/sync_widget_test.dart",
+      "status": "modified"
+    },
+    {
+      "path": "tool/audit_release.py",
+      "status": "modified"
+    },
+    {
+      "path": "tool/check_release_config.py",
+      "status": "modified"
+    },
+    {
+      "path": "tool/configure_auth.py",
+      "status": "added"
+    },
+    {
+      "path": "tool/prepare_ios_build.sh",
+      "status": "modified"
+    },
+    {
+      "path": "windows/flutter/generated_plugin_registrant.cc",
+      "status": "modified"
+    },
+    {
+      "path": "windows/flutter/generated_plugins.cmake",
+      "status": "modified"
+    }
+  ]
+}

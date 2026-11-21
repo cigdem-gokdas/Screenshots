@@ -1,0 +1,352 @@
+{
+  "@@locale": "tr",
+  "appName": "Unuttuğum Screenshotlar",
+  "home": "Koleksiyonlar",
+  "library": "Arşivim",
+  "review": "Günlük bakış",
+  "settings": "Ayarlar",
+  "homeEyebrow": "ARTIK DAHA AZ UNUTULAN",
+  "homeTitle": "Kaydettiklerin,\nhayata karışsın.",
+  "homeSubtitle": "Güzel keşifler bir ekran görüntüsünden fazlasını hak eder.",
+  "yourCollections": "Koleksiyonların",
+  "allEntries": "Tüm kayıtlar",
+  "addEntry": "Yeni kayıt",
+  "watchlist": "İzleyeceklerim",
+  "recipes": "Deneyeceklerim",
+  "reading": "Okuyacaklarım",
+  "gaming": "Oynayacaklarım",
+  "places": "Gideceklerim",
+  "wishlist": "Alacaklarım",
+  "ideas": "Fikirlerim",
+  "other": "Diğer",
+  "watchHint": "Bir sonraki film gecene",
+  "recipesHint": "Yeni bir lezzet keşfine",
+  "readingHint": "Sıradaki güzel hikâyene",
+  "gamingHint": "Yeni bir dünyaya",
+  "placesHint": "Bir sonraki yolculuğuna",
+  "wishlistHint": "Aklında kalan şeylere",
+  "ideasHint": "Bir kıvılcım yeter",
+  "otherHint": "Geri kalan güzelliklere",
+  "reviewTeaser": "Bir gün değil, yakında",
+  "reviewTeaserBody": "Aklında kalanlara küçük bir bakış.",
+  "itemCount": "{count, plural, =0{Henüz kayıt yok} other{{count} kayıt}}",
+  "@itemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchHint": "Keşiflerinde ara",
+  "allCategories": "Tüm kategoriler",
+  "allStatuses": "Tüm durumlar",
+  "filter": "Filtrele",
+  "todo": "Yapılacak",
+  "completed": "Tamamlandı",
+  "archived": "Arşivlendi",
+  "noEntries": "Yeni keşiflere yer aç",
+  "noEntriesBody": "İzlemek, denemek, okumak ya da keşfetmek istediğin bir şey ekle.",
+  "noResults": "Eşleşen kayıt yok",
+  "noResultsBody": "Başka bir arama dene veya filtrelerini temizle.",
+  "clearFilters": "Filtreleri temizle",
+  "newEntry": "Güzel bir keşif",
+  "editEntry": "Kaydı düzenle",
+  "editorSubtitle": "O “bir gün” için küçük bir başlangıç.",
+  "titleLabel": "Başlık",
+  "titleHint": "Aklında ne kaldı?",
+  "categoryLabel": "Koleksiyon",
+  "descriptionLabel": "Notlar (isteğe bağlı)",
+  "descriptionHint": "Hatırlamak istediğin küçük bir detay…",
+  "urlLabel": "Bağlantı (isteğe bağlı)",
+  "urlHint": "https://…",
+  "statusLabel": "Durum",
+  "save": "Kaydet",
+  "cancel": "Vazgeç",
+  "titleError": "1–120 karakter arasında bir başlık gir.",
+  "descriptionError": "Notlar 5.000 karakteri geçmemeli.",
+  "urlError": "Giriş bilgisi içermeyen, herkese açık bir https bağlantısı gir.",
+  "saveError": "Kaydedilemedi. Değişikliklerin burada duruyor. Tekrar dene.",
+  "details": "Keşfin",
+  "edit": "Düzenle",
+  "delete": "Kaydı sil",
+  "deleteTitle": "Bu kaydı silelim mi?",
+  "deleteBody": "Bu kayıt cihazdan kalıcı olarak silinecek.",
+  "deleteConfirm": "Sil",
+  "actionError": "İşlem tamamlanamadı. Lütfen tekrar dene.",
+  "openLink": "Bağlantıyı aç",
+  "linkError": "Bu bağlantı açılamadı.",
+  "savedOn": "Kayıt tarihi: {date}",
+  "@savedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedOn": "Güncelleme: {date}",
+  "@updatedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notes": "Aklında kalsın",
+  "entryGone": "Bu kayıt artık mevcut değil.",
+  "reviewEyebrow": "YENİDEN KEŞFETME ZAMANI",
+  "reviewTitle": "Küçük bir adım,\nyeni bir deneyim.",
+  "reviewSubtitle": "Koleksiyonlarına farklı bir açıdan bak.",
+  "savedToday": "Bugün kaydedilen",
+  "uncompleted": "Seni bekleyen",
+  "completedItems": "Tamamlananlar",
+  "distribution": "Merakının peşinde",
+  "revisit": "Yeniden bakmaya değer",
+  "revisitHint": "En az 7 gündür dokunmadığın, tamamlanmamış keşifler.",
+  "noRevisit": "Şimdilik her şey güncel.",
+  "suggestionLabel": "KÜÇÜK BİR ÖNERİ",
+  "suggestion": "{category} koleksiyonundaki “{title}” ile başla. Bugün için güzel bir keşif yeter.",
+  "@suggestion": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "emptySuggestion": "Yeni keşfin burada başlıyor. Merak ettiğin bir şey kaydet.",
+  "doneSuggestion": "{count} kaydı tamamladın. Yeni bir keşfe yer aç.",
+  "@doneSuggestion": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "archivedSuggestion": "Keşiflerin arşivinde duruyor. Merak ettiğinde bir kaydı yeniden açabilirsin.",
+  "viewEntry": "Göz at",
+  "reviewEmpty": "Hikâyen bir keşifle başlar",
+  "reviewEmptyBody": "Kayıt ekledikçe gerçek etkinliğin burada görünecek.",
+  "language": "Dil",
+  "languageSubtitle": "Kendini en rahat hissettiğin dil.",
+  "systemLanguage": "Cihaz dili",
+  "turkish": "Türkçe",
+  "english": "English",
+  "privacyTitle": "Sen ve keşiflerin",
+  "privacyBody": "Screenshot analizi bu cihazda, Apple Vision ve yerel kurallarla yapılır. Görseller ve OCR metni sunucuya gönderilmez. İsteğe bağlı hesap girişi kimlik bilgilerini Firebase ve seçtiğin sağlayıcıyla; Pro aboneliği satın alma bilgilerini RevenueCat ve mağazayla paylaşır.",
+  "storageTitle": "Bu cihazda",
+  "storageBody": "Uygulamayı kaldırmak veya depolamayı temizlemek kayıtlarını silebilir. iOS’ta yerel veritabanı ve içe aktarılan kopyalar için yedekleme dışında tutma ayarı istenir. Önceden oluşturulan yedekler değiştirilmez.",
+  "loadError": "Koleksiyonun yüklenemedi.",
+  "retry": "Tekrar dene",
+  "close": "Kapat",
+  "discardTitle": "Değişikliklerden vazgeçilsin mi?",
+  "discardBody": "Kaydedilmemiş değişikliklerin kaybolacak.",
+  "discard": "Vazgeç",
+  "keepEditing": "Düzenlemeye devam et",
+  "autoSync": "Otomatik Ekran Görüntüsü Eşzamanlama",
+  "syncIntroTitle": "Ekran görüntülerin,\nbiraz daha düzenli.",
+  "syncIntroBody": "Otomatik eşzamanlamayı bir kez aç. Yeni ekran görüntülerin seçme, onaylama veya kategorize etme adımı olmadan kayda dönüşür. İstediğin kaydı sonradan düzenleyebilirsin.",
+  "syncAccessTitle": "Fotoğraf erişimi senin kontrolünde",
+  "syncAccessBody": "iOS tüm fotoğraf arşivine veya yalnızca seçili fotoğraflara erişim verebilir. İşletim sistemi erişimi Ekran Görüntüleri albümüyle sınırlamaz. Uygulama tür denetimi yaparak yalnızca ekran görüntülerini işler. Sınırlı erişimde bazıları görünmeyebilir. Erişimi daha sonra iOS Ayarlarından değiştirebilir veya kaldırabilirsin.",
+  "syncLocalTitle": "Bu cihazda düzenlenir",
+  "syncLocalBody": "Ekran görüntüleri ve okunan metin uygulamanın yerel depolamasında kalır. Olası şifreler, banka bilgileri ve kurtarma kodları kısa bir yerel kontrolden sonra atlanır. Algılama ve sınıflandırma hata yapabilir. Metin tanıma Apple Vision ve yerel sınıflandırma kuralları kullanır; bulut yapay zekâsı kullanmaz.",
+  "syncForegroundTitle": "Geri döndüğünde kaldığı yerden",
+  "syncForegroundBody": "Eşzamanlama uygulama etkinken çalışır, tekrar açtığında eksikleri tamamlar. iOS uygulamayı askıya alabilir veya kapatabilir; sürekli arka plan takibi yoktur. Yalnızca iCloud’da bulunan görüntüler cihazda kullanılabilir olana kadar bekler.",
+  "syncEnable": "Otomatik eşzamanlamayı aç",
+  "notNow": "Şimdi değil",
+  "newOnly": "Önce arşivin, sonra yenileri",
+  "newOnlyBody": "Erişim verdiğinde mevcut ekran görüntülerin bulunur. Sonrasında yeni screenshotlar uygulama açıkken eklenir. Aynı içerik tekrar kaydedilmez.",
+  "importExisting": "Mevcut Ekran Görüntülerini İçe Aktar",
+  "importExistingTitle": "Eski ekran görüntüleri de eklensin mi?",
+  "importExistingBody": "Eşzamanlama açılmadan önce çekilen erişilebilir ekran görüntülerini otomatik düzenle. Hassas görüntüler yine atlanır. Fotoğraflar arşivindeki orijinaller değiştirilmez.",
+  "syncStatus": "Eşzamanlama Durumu",
+  "lastSync": "Son Başarılı Eşzamanlama",
+  "neverSynced": "Henüz yok",
+  "photoPermission": "Fotoğraf erişimi",
+  "accessNotDetermined": "İstenmedi",
+  "accessAuthorized": "Tam Erişim",
+  "accessLimited": "Sınırlı Erişim",
+  "accessDenied": "İzin Verilmedi",
+  "accessRestricted": "Erişim cihaz denetimleriyle kısıtlı",
+  "syncOff": "Otomatik eşzamanlama kapalı",
+  "syncChecking": "Fotoğraf erişimi kontrol ediliyor…",
+  "syncScanning": "Ekran görüntüleri bulunuyor…",
+  "syncProcessing": "Bu cihazda düzenleniyor…",
+  "syncIdle": "Güncel",
+  "syncWaiting": "Bazı görüntüler bekliyor — buluttakiler cihazda kullanılabilir olunca yeniden denenir",
+  "syncPaused": "Uygulama etkin değilken duraklatıldı",
+  "syncError": "Eşzamanlama tamamlanamadı. Kayıtların burada duruyor.",
+  "syncIOSOnly": "Otomatik kitaplık eşzamanlaması iOS’te kullanılabilir. Android’de seçerek içe aktarma ve elle düzenlemeyi kullanabilirsin.",
+  "openPhotoSettings": "iOS Ayarlar’ı aç",
+  "deleteImported": "İçe Aktarılan Ekran Görüntüsü Verilerini Sil",
+  "deleteImportedTitle": "İçe aktarılan veriler uygulamadan silinsin mi?",
+  "deleteImportedBody": "Eşzamanlamayı kapatır; içe aktarılan kayıtları, yerel görüntü kopyalarını, okunan metni ve içe aktarma geçmişini siler. Manuel kayıtlar ve Fotoğraflar’daki orijinaller korunur. Tekrar açmak yalnızca yeni görüntülerle başlar.",
+  "screenshotFallback": "Ekran görüntüsü · {date}",
+  "@screenshotFallback": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "importedScreenshot": "İçe aktarılan ekran görüntüsü",
+  "capturedOn": "Çekilme tarihi: {date}",
+  "@capturedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "imageUnavailable": "Yerel ekran görüntüsü kopyası bulunamıyor.",
+  "syncHistoryPending": "Erişim sağlandığında mevcut ekran görüntüleri de eklenecek.",
+  "privacyPolicy": "Gizlilik Politikası",
+  "termsOfUse": "Kullanım Koşulları",
+  "readPublishedPolicy": "Yayımlanan metni oku",
+  "legalDraftNotice": "Bu özet taslaktır. Abonelikler sunulmadan önce geliştiricinin tam yasal metinleri onaylayıp yayımlaması gerekir.",
+  "privacyPolicyBody": "Seçtiğin ekran görüntüleri, çıkarılan metinler ve koleksiyonların bu cihazda işlenir ve uygulamanın özel alanında saklanır. Ekran görüntüleri ve OCR metinleri bir sunucuya veya yapay zekâ sağlayıcısına gönderilmez. Otomatik eşzamanlama isteğe bağlıdır ve ayrıca Fotoğraflar erişimi ister; erişimi cihaz Ayarlarından değiştirebilirsin.\n\nİsteğe bağlı Pro abonelikleri Apple/Google ve RevenueCat kullanır. Bağlanmayı seçtikten sonra aboneliği doğrulamak için anonim satın alma kimliği ve satın alma geçmişi paylaşılır. SDK tanılama ve otomatik reklam ilişkilendirme kimliği toplama kapalıdır. RevenueCat, geliştiriciye satın alma raporları sunar. Reklam, takip veya uygulama analiz SDK’sı eklemiyoruz.\n\nTek tek kayıtları silebilir veya Ayarlardaki İçe Aktarılan Ekran Görüntüsü Verilerini Sil seçeneğiyle içe aktarılan kayıtları, kopyaları ve geçmişi kaldırabilirsin. Elle oluşturulan kayıtlar sen silene kadar kalır. Fotoğraflardaki asıllar silinmez. Geçici işleme kopyaları her denemeden sonra, işlem kesilirse sonraki açılışta temizlenir. Satın alma kayıtları mağaza ve RevenueCat tarafından ayrı tutulur; yerel ekran görüntülerini silmek aboneliği iptal etmez veya saklamak zorunda oldukları kayıtları silmez.\n\nUygulamayı kaldırmak yerel verileri silebilir. Uygulama, veritabanı ve içe aktarılan kopyalar için iOS dosya koruması ve yedekleme dışında tutma ister; önceki yedeklerde veya dosya sistemi kopyalarında veri kalabilir. Hassas içerik denetimi bazı içerikleri kaçırabilir; silme, adli düzeyde güvenli silme garantisi değildir. Kayıtlı dış bağlantılar yalnızca sen seçtiğinde açılır. Kullanıcı hesabı gerekmez.\n\nGoogle veya Apple ile giriş isteğe bağlıdır. Seçersen Firebase Authentication ve seçtiğin sağlayıcı giriş kimliğini (UID, varsa ad/e-posta veya Apple gizli e-postası, oturum ve bağlantı bilgileri) işler. Screenshot ve OCR metni gönderilmez. Oturum bilgilerini SDK yönetir; uygulama veritabanında saklanmaz. Abonelik bağlantısına onay verdiysen Firebase UID, RevenueCat kimliği olarak kullanılır. Hesabı Sil yeniden doğrulama ister; Firebase hesabını ve bu cihazdaki oturumu kaldırır, yerel koleksiyonları korur. Mağaza ve RevenueCat satın alma kayıtları ayrıdır; hesap silmek aboneliği iptal etmez. Screenshot bulut yedeği veya cihazlar arası koleksiyon eşitlemesi yoktur.\n\nGoogle Sign-In ve Firebase Auth, hizmetlerinin çalışması için tanılama, cihaz/kullanıcı kimliği ve kullanım bilgileri işleyebilir. SDK gizlilik bildirimleri daha geniş kategoriler de içerir. Uygulama telefon numarası veya konum izni istemez; bu sağlayıcı verileri screenshot içeriğinden ayrıdır. Ayrı bir reklam veya uygulama analiz servisi eklenmemiştir; sağlayıcıların operasyonel ölçümlerinin tümünün kapalı olduğu iddia edilmez.",
+  "termsBody": "Seçerek içe aktarma, yerel düzenleme, görüntüleme, silme ve iOS üzerinde uygulama açıkken otomatik screenshot keşfi ücretsizdir. Pro, iOS üzerinde tek seferde seçilebilen fotoğraf sayısını 10’dan 50’ye çıkarır. Sürekli arka plan takibi veya sınırsız bulut yapay zekâ sunmaz. Apple Vision ve yerel kurallar cihazında çalışır. Android görselleri elle düzenlemek için saklar; OCR şu an iOS’a özeldir.\n\nAylık ve yıllık abonelikler, mağazadan dönem bitiminden en az 24 saat önce iptal edilmedikçe otomatik yenilenir. Gerçek fiyatı mağaza gösterir ve ödemeyi onaylatır. Uygulamayı veya hesabı silmek aboneliği iptal etmez. Aboneliğini mağaza ayarlarından yönetebilirsin.\n\nPro bittiğinde mevcut verilerin ve ücretsiz keşif kullanılabilir kalır. Doğrulanmış erişim en fazla 72 saat, bilinen bitiş tarihini aşmadan çevrimdışı sürebilir. İade, erişim iptali veya süre sonu doğrulandığında büyük toplu seçim hakkı sona erer.\n\nHesap açmak isteğe bağlıdır; giriş ve çıkış bu cihazdaki koleksiyonları değiştirmez. Hesap silme onayı yerel koleksiyonlarının korunacağını açıklar. Bulut yedeği sunulmaz. Sınıflandırma ve hassas içerik kontrolleri hata yapabilir. Bu taslak, yayıncı/iletişim bilgileri ve hukuki onay tamamlanmadan yayımlanmamalıdır.",
+  "proTitle": "Unuttuğum Screenshotlar Pro",
+  "proBadge": "Pro",
+  "proHeadline": "Daha büyük bir yığını düzenle.",
+  "proBenefits": "Tek seçimde 50 fotoğrafa kadar içe aktar. Analiz cihazında yapılır. Otomatik screenshot keşfi ve temel özellikler herkes için açık.",
+  "freeAlways": "Seçerek içe aktarma (10 fotoğraf), otomatik keşif, görüntüleme, düzenleme, silme, arama ve günlük bakış ücretsiz kalır.",
+  "proActive": "Pro etkin",
+  "freePlan": "Ücretsiz plan",
+  "upgradePro": "Pro’yu keşfet",
+  "billingDisclosure": "Planları görmek veya satın almalarını geri yüklemek için RevenueCat ve mağazaya bağlanırsın. Aboneliğini doğrulamak için satın alma kimliği ve geçmişi paylaşılır; giriş yaptıysan Firebase UID ile ilişkilendirilir. Screenshot ve OCR metni paylaşılmaz. Hesap açmak gerekmez.",
+  "viewPlans": "Bağlan ve planları gör",
+  "monthlyPrice": "{price} / ay",
+  "yearlyPrice": "{price} / yıl",
+  "subscriptionTerms": "Otomatik yenilenen abonelik. Fiyatı ve ödemeyi mağaza onaylar. Yenilemeden en az 24 saat önce mağaza abonelik ayarlarından iptal edebilirsin. İptalden sonra kayıtlı verilerine erişimin sürer.",
+  "restorePurchases": "Satın almaları geri yükle",
+  "manageSubscription": "Aboneliği yönet",
+  "purchaseSuccess": "Pro hazır. Düzenlemeye biraz ara verebilirsin.",
+  "restoreSuccess": "Pro aboneliğin geri yüklendi.",
+  "restoreEmpty": "Bu mağaza hesabında etkin Pro aboneliği bulunamadı.",
+  "purchaseCancelled": "Satın alma iptal edildi. Ücretsiz özellikleri kullanmaya devam edebilirsin.",
+  "purchasePending": "Mağaza onayı bekleniyor. Yeniden satın alma; onaydan sonra erişimin güncellenir.",
+  "purchaseFailed": "Satın alma tamamlanamadı. Bağlantını ve mağaza hesabını kontrol edip yeniden dene.",
+  "billingUnavailable": "Abonelik seçenekleri şu anda kullanılamıyor. Kayıtlı verilerin ve ücretsiz özellikler kullanılabilir.",
+  "autoSyncPro": "Kitaplığı otomatik düzenleme bir Pro özelliğidir. Mevcut kayıtlarına her planda erişebilirsin.",
+  "importScreenshots": "Ekran görüntüsü içe aktar",
+  "pickerHeadline": "Birkaç iyi\nkeşif seç.",
+  "pickerExplanation": "Sistem seçicisinden ekran görüntülerini veya fotoğrafları seç. Uygulama yalnızca seçtiklerini alır; tüm fotoğraf kitaplığına erişim gerekmez. iOS’te metin tanıma ve sınıflandırma bu cihazda yapılır. Yapay zekâ servisine yükleme yapılmaz. Her sonucu düzenleyebilir veya silebilirsin.",
+  "pickerLimits": "Her seferinde en fazla 10 fotoğraf; Pro ile 50. Görseller cihazında küçültülür ve konum metaverisi tutulmaz.",
+  "chooseScreenshots": "Görselleri seç",
+  "importWorking": "Bu cihazda düzenleniyor… Güvenle iptal edebilirsin.",
+  "importSummary": "{imported} kaydedildi · {duplicates} zaten kayıtlı · {skipped} gizlilik için atlandı · {failed} işlenemedi.",
+  "@monthlyPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@yearlyPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "@importSummary": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "duplicates": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "photoAccessSection": "Fotoğraf Erişimi",
+  "photoPromptTitle": "Screenshotlarını bulalım mı?",
+  "photoPromptBody": "Tam erişimle ekran görüntülerini otomatik bulup düzenleriz; istersen sadece seçtiklerini ekleyebilirsin.",
+  "localAnalysis": "Analiz cihazında yapılır.",
+  "findScreenshots": "Ekran Görüntülerimi Bul",
+  "pickMyself": "Kendim Seçerim",
+  "selectPhotos": "Fotoğraf Seç",
+  "manageAccess": "Erişimi Yönet",
+  "openSettings": "Ayarları Aç",
+  "allowInSettings": "Ayarlardan İzin Ver",
+  "photoLimitedBody": "Yalnızca seçtiğin fotoğrafları görebiliyoruz.",
+  "photoDeniedBody": "Galeri erişimi kapalı. İstersen ekran görüntülerini kendin seçebilirsin.",
+  "photoRestrictedBody": "Fotoğraf erişimi bu cihazda kısıtlı. Bu izin uygulamadan değiştirilemiyor. Fotoğraf seçmeyi yine deneyebilirsin.",
+  "photoFullBody": "Ekran görüntülerin uygulama açıkken otomatik bulunur. Diğer fotoğrafların analiz edilmez.",
+  "onboardingSaved": "Kaydettin.",
+  "onboardingLost": "Sonra kayboldu.",
+  "onboardingRecognition": "Screenshotların aslında bir yapılacaklar listesi.",
+  "onboardingResolution": "Kaydetmek yetmiyor.\nBulabilmek gerekiyor.",
+  "onboardingNext": "Devam",
+  "organizeHell": "Cehennemi Düzenle",
+  "onboardingGuest": "Hesap açmadan başlayabilirsin.",
+  "semanticWatch": "İzle",
+  "semanticRead": "Oku",
+  "semanticGo": "Git",
+  "semanticEat": "Ye",
+  "semanticDo": "Yap",
+  "accountTitle": "Hesap",
+  "guestMode": "Bu cihazda, sana ait.",
+  "accountConnected": "Hesabın bağlı",
+  "accountExplanation": "Giriş isteğe bağlı. Abonelik kimliğini aynı tutar; ekran görüntülerin buluta yüklenmez.",
+  "continueLabel": "Devam et",
+  "continueGoogle": "Google ile devam et",
+  "continueApple": "Apple ile devam et",
+  "linkGoogle": "Google hesabını bağla",
+  "linkApple": "Apple hesabını bağla",
+  "linkAccountExplanation": "Diğer hesabı bağlamak için önce mevcut hesabını doğrularız. Aynı e-posta adresi hesapları otomatik birleştirmez.",
+  "signOut": "Çıkış Yap",
+  "deleteAccount": "Hesabı Sil",
+  "deleteAccountBody": "Hesabın silinecek ve bu cihazdaki giriş bilgilerin temizlenecek. Yerel screenshotların ve koleksiyonların korunacak. Aboneliğin otomatik iptal olmaz; Apple abonelik ayarlarından yönetebilirsin. Hesabını yeniden doğrulaman istenecek.",
+  "authDisabled": "Hesap girişi bu sürümde kapalı. Tüm özellikler hesapsız çalışır.",
+  "authUnavailable": "Hesapla giriş henüz kullanıma hazır değil. Hesap açmadan tüm temel özellikleri kullanabilirsin.",
+  "authCancelled": "Giriş iptal edildi. Koleksiyonların burada.",
+  "authFailed": "Giriş tamamlanamadı. Biraz sonra tekrar deneyebilirsin.",
+  "authNetwork": "Hesabına şu an ulaşılamıyor. İnternet bağlantını kontrol edebilirsin; yerel koleksiyonların kullanılabilir.",
+  "authConflict": "Bu giriş başka bir hesaba bağlı. Önce daha önce kullandığın yöntemle giriş yapıp diğer hesabını buradan bağlayabilirsin. Hesaplarını otomatik birleştirmedik.",
+  "authRevoked": "Hesap erişimin sona erdi. Koleksiyonlarını kullanabilir, istersen yeniden giriş yapabilirsin.",
+  "authDeleted": "Hesabın silindi. Bu cihazdaki koleksiyonların korunuyor.",
+  "authSignedOut": "Çıkış yapıldı. Koleksiyonların bu cihazda duruyor.",
+  "authBillingSync": "Hesabın açık, ancak abonelik durumuna ulaşılamadı. Bağlantı geldiğinde yeniden kontrol edeceğiz.",
+  "photoAccessUnavailable": "Fotoğraf erişim durumunu şu an okuyamıyoruz. İstersen fotoğraf seçebilir veya yeniden deneyebilirsin.",
+  "sortLabel": "Sırala",
+  "sortNewest": "Önce en yeni",
+  "sortOldest": "Önce en eski",
+  "sortTitle": "A–Z",
+  "starterImport": "Ekran görüntülerini içe aktar",
+  "addManually": "Elle ekle",
+  "undo": "Geri al",
+  "entryDeleted": "Kayıt silindi",
+  "markDone": "Tamamla",
+  "markTodo": "Yeniden aç",
+  "share": "Paylaş",
+  "linkConfirmTitle": "Bağlantı açılsın mı?",
+  "linkConfirmBody": "Bu bağlantı bir ekran görüntüsünden okundu. Açmadan önce adresi kontrol et.",
+  "open": "Aç",
+  "bestValue": "En avantajlı",
+  "privacyNote": "Veriler cihaz yedeklerine dahil edilmez; cihaz değiştirdiğinde kayıtlar taşınmaz.",
+  "onboardingProgress": "{current} / {total}",
+  "@onboardingProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "versionLabel": "Sürüm {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "moreActions": "Diğer işlemler"
+}

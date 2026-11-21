@@ -1,0 +1,592 @@
+{
+  "packages": [
+    {
+      "package": "_fe_analyzer_shared",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "96.0.0"
+      },
+      "upgradable": {
+        "version": "96.0.0"
+      },
+      "resolvable": {
+        "version": "110.0.0"
+      },
+      "latest": {
+        "version": "110.0.0"
+      }
+    },
+    {
+      "package": "analyzer",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "10.2.0"
+      },
+      "upgradable": {
+        "version": "10.2.0"
+      },
+      "resolvable": {
+        "version": "14.6.0"
+      },
+      "latest": {
+        "version": "14.6.0"
+      }
+    },
+    {
+      "package": "build",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "4.0.7"
+      },
+      "upgradable": {
+        "version": "4.0.7"
+      },
+      "resolvable": {
+        "version": "4.0.11"
+      },
+      "latest": {
+        "version": "5.0.0"
+      }
+    },
+    {
+      "package": "build_config",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "1.3.3"
+      },
+      "upgradable": {
+        "version": "1.3.3"
+      },
+      "resolvable": {
+        "version": "1.3.3"
+      },
+      "latest": {
+        "version": "1.4.0"
+      }
+    },
+    {
+      "package": "build_runner",
+      "kind": "dev",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.15.1"
+      },
+      "upgradable": {
+        "version": "2.15.1"
+      },
+      "resolvable": {
+        "version": "2.16.2"
+      },
+      "latest": {
+        "version": "2.17.1"
+      }
+    },
+    {
+      "package": "cli_util",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.4.2"
+      },
+      "upgradable": {
+        "version": "0.4.2"
+      },
+      "resolvable": {
+        "version": "0.6.0"
+      },
+      "latest": {
+        "version": "0.6.0"
+      }
+    },
+    {
+      "package": "code_assets",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "1.2.1"
+      },
+      "upgradable": {
+        "version": "2.1.0"
+      },
+      "resolvable": {
+        "version": "2.1.0"
+      },
+      "latest": {
+        "version": "2.1.0"
+      }
+    },
+    {
+      "package": "cupertino_icons",
+      "kind": "direct",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "1.0.9"
+      },
+      "upgradable": {
+        "version": "1.0.9"
+      },
+      "resolvable": {
+        "version": "2.0.0"
+      },
+      "latest": {
+        "version": "2.0.0"
+      }
+    },
+    {
+      "package": "dart_style",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "3.1.7"
+      },
+      "upgradable": {
+        "version": "3.1.7"
+      },
+      "resolvable": {
+        "version": "3.1.14"
+      },
+      "latest": {
+        "version": "3.1.14"
+      }
+    },
+    {
+      "package": "drift",
+      "kind": "direct",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.31.0"
+      },
+      "upgradable": {
+        "version": "2.31.0"
+      },
+      "resolvable": {
+        "version": "2.35.2"
+      },
+      "latest": {
+        "version": "2.35.2"
+      }
+    },
+    {
+      "package": "drift_dev",
+      "kind": "dev",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.31.0"
+      },
+      "upgradable": {
+        "version": "2.31.0"
+      },
+      "resolvable": {
+        "version": "2.35.1"
+      },
+      "latest": {
+        "version": "2.35.1"
+      }
+    },
+    {
+      "package": "drift_flutter",
+      "kind": "direct",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.2.8"
+      },
+      "upgradable": {
+        "version": "0.2.8"
+      },
+      "resolvable": {
+        "version": "0.3.1"
+      },
+      "latest": {
+        "version": "0.3.1"
+      }
+    },
+    {
+      "package": "hooks",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.0.2"
+      },
+      "upgradable": {
+        "version": "2.2.0"
+      },
+      "resolvable": {
+        "version": "2.2.0"
+      },
+      "latest": {
+        "version": "2.2.0"
+      }
+    },
+    {
+      "package": "http_multi_server",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "3.2.2"
+      },
+      "upgradable": {
+        "version": "3.2.3"
+      },
+      "resolvable": {
+        "version": "3.2.3"
+      },
+      "latest": {
+        "version": "3.2.3"
+      }
+    },
+    {
+      "package": "material_color_utilities",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.13.0"
+      },
+      "upgradable": {
+        "version": "0.13.0"
+      },
+      "resolvable": {
+        "version": "0.13.0"
+      },
+      "latest": {
+        "version": "0.13.1"
+      }
+    },
+    {
+      "package": "meta",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "1.18.3"
+      },
+      "upgradable": {
+        "version": "1.19.0"
+      },
+      "resolvable": {
+        "version": "1.19.0"
+      },
+      "latest": {
+        "version": "1.19.0"
+      }
+    },
+    {
+      "package": "native_toolchain_c",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": null,
+      "upgradable": null,
+      "resolvable": {
+        "version": "0.19.5"
+      },
+      "latest": {
+        "version": "0.19.5"
+      }
+    },
+    {
+      "package": "objective_c",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "9.5.0"
+      },
+      "upgradable": {
+        "version": "9.6.2"
+      },
+      "resolvable": {
+        "version": "9.6.2"
+      },
+      "latest": {
+        "version": "9.6.2"
+      }
+    },
+    {
+      "package": "package_config",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.2.0"
+      },
+      "upgradable": {
+        "version": "2.2.0"
+      },
+      "resolvable": {
+        "version": "3.0.0"
+      },
+      "latest": {
+        "version": "3.0.0"
+      }
+    },
+    {
+      "package": "record_use",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.6.0"
+      },
+      "upgradable": {
+        "version": "1.1.1"
+      },
+      "resolvable": {
+        "version": "1.1.1"
+      },
+      "latest": {
+        "version": "1.1.1"
+      }
+    },
+    {
+      "package": "shelf",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "1.4.2"
+      },
+      "upgradable": {
+        "version": "1.4.3"
+      },
+      "resolvable": {
+        "version": "1.4.3"
+      },
+      "latest": {
+        "version": "1.4.3"
+      }
+    },
+    {
+      "package": "source_gen",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "4.2.4"
+      },
+      "upgradable": {
+        "version": "4.2.4"
+      },
+      "resolvable": {
+        "version": "4.3.1"
+      },
+      "latest": {
+        "version": "4.3.1"
+      }
+    },
+    {
+      "package": "sqlcipher_flutter_libs",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": null,
+      "upgradable": null,
+      "resolvable": {
+        "version": "0.7.0+eol"
+      },
+      "latest": {
+        "version": "0.7.0+eol"
+      }
+    },
+    {
+      "package": "sqlite3",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.9.4"
+      },
+      "upgradable": {
+        "version": "2.9.4"
+      },
+      "resolvable": {
+        "version": "3.7.1"
+      },
+      "latest": {
+        "version": "3.7.1"
+      }
+    },
+    {
+      "package": "sqlite3_flutter_libs",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.5.42"
+      },
+      "upgradable": {
+        "version": "0.5.42"
+      },
+      "resolvable": {
+        "version": "0.6.0+eol"
+      },
+      "latest": {
+        "version": "0.6.0+eol"
+      }
+    },
+    {
+      "package": "sqlparser",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.43.1"
+      },
+      "upgradable": {
+        "version": "0.43.1"
+      },
+      "resolvable": {
+        "version": "0.45.0"
+      },
+      "latest": {
+        "version": "0.45.0"
+      }
+    },
+    {
+      "package": "test_api",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "0.7.12"
+      },
+      "upgradable": {
+        "version": "0.7.12"
+      },
+      "resolvable": {
+        "version": "0.7.12"
+      },
+      "latest": {
+        "version": "0.7.15"
+      }
+    },
+    {
+      "package": "vector_math",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "2.4.0"
+      },
+      "upgradable": {
+        "version": "2.4.3"
+      },
+      "resolvable": {
+        "version": "2.4.3"
+      },
+      "latest": {
+        "version": "2.4.3"
+      }
+    },
+    {
+      "package": "vm_service",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": {
+        "version": "15.3.0"
+      },
+      "upgradable": {
+        "version": "15.4.0"
+      },
+      "resolvable": {
+        "version": "15.4.0"
+      },
+      "latest": {
+        "version": "15.4.0"
+      }
+    },
+    {
+      "package": "yaml_edit",
+      "kind": "transitive",
+      "isDiscontinued": false,
+      "replacedBy": null,
+      "isCurrentRetracted": false,
+      "isCurrentAffectedByAdvisory": false,
+      "current": null,
+      "upgradable": null,
+      "resolvable": {
+        "version": "2.2.4"
+      },
+      "latest": {
+        "version": "2.2.4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Flutter-related
+**/Flutter/ephemeral/
+**/Pods/
+
+# Xcode-related
+**/dgph
+**/xcuserdata/
+
+# Hygiene additions
+/build
+/macos/Flutter/ephemeral
+Flutter/ephemeral
+.ephemeral-preserved-*
+**/.symlinks/
+*.log
+GoogleService-Info.plist
+google-services.json
